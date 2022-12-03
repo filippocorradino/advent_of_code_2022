@@ -10,7 +10,7 @@ Yet another go on the good ol' snake - again in Python 3.8.10
 | Day                                            | Part 1 | Part 2 | Script            |
 | ---------------------------------------------- | :----: | :----: | :---------------: |
 | **[01](https://adventofcode.com/2022/day/1)**  | ⭐ | ⭐ | [day01.py](day01.py) |
-| **[02](https://adventofcode.com/2022/day/2)**  ||||
+| **[02](https://adventofcode.com/2022/day/2)**  | ⭐ | ⭐ | [day02.py](day02.py) |
 | **[03](https://adventofcode.com/2022/day/3)**  ||||
 | **[04](https://adventofcode.com/2022/day/4)**  ||||
 | **[05](https://adventofcode.com/2022/day/5)**  ||||
