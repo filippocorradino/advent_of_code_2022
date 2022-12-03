@@ -3,7 +3,7 @@ AoC 2022 (https://adventofcode.com/2022)
 
 Still waiting to find some time to learn Rust
 
-Yet another go on the good ol' snake - this year in Python 3.8.10
+Yet another go on the good ol' snake - again in Python 3.8.10
 
 #### Current progress
 
@@ -40,4 +40,5 @@ Click on the ⭐ to go to the solution script
 #### Target
 * Simple and readable code, as pythonic as I can make it
 * Readability and versatility over efficiency, with *some* smartassness when I can ;)
+* Scalability whenever possible (O(1) memory usage)
 * No dependencies outside standard library
