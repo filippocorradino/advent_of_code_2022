@@ -35,8 +35,6 @@ Yet another go on the good ol' snake - again in Python 3.8.10
 | **[24](https://adventofcode.com/2022/day/24)** ||||
 | **[25](https://adventofcode.com/2022/day/25)** ||||
 
-Click on the ⭐ to go to the solution script  
-
 #### Target
 * Simple and readable code, as pythonic as I can make it
 * Readability and versatility over efficiency, with *some* smartassness when I can ;)
