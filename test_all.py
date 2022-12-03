@@ -16,7 +16,7 @@ import unittest
 
 class TestResults(unittest.TestCase):
 
-    solutions = {}
+    solutions = {'day01': [69883, 207576]}
 
     def test_results(self):
         """
