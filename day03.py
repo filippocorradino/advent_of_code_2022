@@ -26,21 +26,20 @@ def priority(char):
 
 
 def main(ifile='inputs/day_03_input.txt'):
-    errors, badges = [], []
+    errors, badges = 0, 0
     with open(ifile) as file:
         while team := list(islice(file, 3)):
             rucksacks = [line.strip() for line in team]
             for rucksack in rucksacks:
                 half = len(rucksack) // 2
-                both = set(rucksack[:half]).intersection(set(rucksack[half:]))
-                errors.append(both.pop())
-            badge = reduce(lambda x, y: x.intersection(y),
+                both = set(rucksack[:half]) & (set(rucksack[half:]))
+                errors += priority(both.pop())
+            badge = reduce(lambda x, y: x & y,
                            (set(k) for k in rucksacks))
-            badges.append(badge.pop())
-    result = [sum(map(priority, x)) for x in (errors, badges)]
-    print(f"The sum of the wrong items priorities is {result[0]}")
-    print(f"The sum of the badges priorities is {result[1]}")
-    return result
+            badges += priority(badge.pop())
+    print(f"The sum of the wrong items priorities is {errors}")
+    print(f"The sum of the badges priorities is {badges}")
+    return [errors, badges]
     
 
 if __name__ == "__main__":
