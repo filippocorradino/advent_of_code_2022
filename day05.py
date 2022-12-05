@@ -32,9 +32,9 @@ def final_top_crates(ifile, crane):
         # Crates piles are saved as strings
         crates_levels = []
         while line := next(file).strip('\n'):
-            crates_levels.append(line[1::4])
-        crates_levels.reverse()
-        crates_list = [''.join(x) for x in zip(*crates_levels)]
+            crates_levels.append(line[1::4])  # Get crate letters and pile nums
+        crates_levels.reverse()  # Order the levels bottom to top
+        crates_list = [''.join(x) for x in zip(*crates_levels)]  # Rows to Cols
         crates_dict = {int(x[0]): x[1:].strip(' ') for x in crates_list}
         # Now follow the crane instructions and check the top crates
         crane_operation(file, crates_dict, crane)

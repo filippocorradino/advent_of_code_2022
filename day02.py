@@ -12,7 +12,7 @@ __author__ = "Filippo Corradino"
 __email__ = "filippo.corradino@gmail.com"
 
 
-# Only 9 cases in RPS, a LUT is cheap (wouldn't easily scale amyway!)
+# Only 9 cases in R-P-S, a LUT is cheap (wouldn't easily scale anyway!)
 # A-B-C = X-Y-Z = R-P-S
 
 POINTS_DICT_1 = {

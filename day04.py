@@ -32,7 +32,7 @@ def main(ifile='inputs/day_04_input.txt'):
                  for task in line.strip().split(',')]
                  for line in file)
         overlaps = ((int(full_overlap(x)), int(any_overlap(x))) for x in pairs)
-        result = list(sumiter(*overlaps))
+        result = list(sumiter(*overlaps))  # "Column-wise" sum of overlaps
     print(f"There are {result[0]} full overlaps")
     print(f"There are {result[1]} partial overlaps")
     return result

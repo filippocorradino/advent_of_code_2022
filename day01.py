@@ -18,11 +18,14 @@ def calories_counter(ifile, n=1):
     with open(ifile) as file:
         for calories in (line.strip() for line in file):
             if calories:
+                # Still on the current elf, tally up the calories
                 current_elf_calories += int(calories)
             else:
+                # Check vs top elves, keep only the top n elves by calory count
                 max_elves_calories.append(current_elf_calories)
                 max_elves_calories.sort()
                 max_elves_calories = max_elves_calories[1:]
+                # Reset and move to the next elf
                 current_elf_calories = 0
     result = sum(max_elves_calories)
     print(f"The top {n} elves bring a total of {result} calories")

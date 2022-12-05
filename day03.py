@@ -28,15 +28,18 @@ def priority(char):
 def main(ifile='inputs/day_03_input.txt'):
     errors, badges = 0, 0
     with open(ifile) as file:
+        # Work by elf team (3 elves per team)
         while team := list(islice(file, 3)):
             rucksacks = [line.strip() for line in team]
+            # Find misplaced items at elf level
             for rucksack in rucksacks:
                 half = len(rucksack) // 2
                 both = set(rucksack[:half]) & (set(rucksack[half:]))
-                errors += priority(both.pop())
+                errors += priority(both.pop())  # Set to char
+            # Find common badge item at team level
             badge = reduce(lambda x, y: x & y,
                            (set(k) for k in rucksacks))
-            badges += priority(badge.pop())
+            badges += priority(badge.pop())  # Set to char
     print(f"The sum of the wrong items priorities is {errors}")
     print(f"The sum of the badges priorities is {badges}")
     return [errors, badges]
