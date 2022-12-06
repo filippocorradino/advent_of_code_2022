@@ -39,7 +39,7 @@ POINTS_DICT_2 = {
 }
 
 
-def main(ifile='inputs/day_02_input.txt', elves=[1, 3]):
+def main(ifile='inputs/day_02_input.txt'):
 
     def play(points_dict):
         with open(ifile) as file:
