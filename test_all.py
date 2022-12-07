@@ -20,7 +20,8 @@ class TestResults(unittest.TestCase):
                  'day02': [11475, 16862],
                  'day03': [7826, 2577],
                  'day04': [494, 833],
-                 'day05': ['FJSRQCFTN', 'CJVLJQPHS']}
+                 'day05': ['FJSRQCFTN', 'CJVLJQPHS'],
+                 'day06': [1757, 2950]}
 
     def test_results(self):
         """

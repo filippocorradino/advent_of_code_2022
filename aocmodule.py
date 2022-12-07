@@ -7,5 +7,20 @@ __author__ = "Filippo Corradino"
 __email__ = "filippo.corradino@gmail.com"
 
 
+from itertools import tee
+
+
+def sliding_window(iterable, n):
+    """
+    Creates a sliding window of size n over an iterable object
+    Returns a generator of n-tuples
+    """
+    iterators = tee(iterable, n)
+    for i, iterator in enumerate(iterators):
+        for _ in range(i):
+            next(iterator, None)
+    return zip(*iterators)
+
+
 def sumiter(*iterables):
     return (sum(x) for x in zip(*iterables))
