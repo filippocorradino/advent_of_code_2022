@@ -52,8 +52,7 @@ def simulate_rope(ifile, knots, start=(0, 0)):
 def main(ifile='inputs/day_09_input.txt', knots=[2, 10]):
     results = []
     for k in knots:
-        result = len(set(nodes[-1].coordinates
-                     for nodes in simulate_rope(ifile, k)))
+        result = len(set(nodes[-1] for nodes in simulate_rope(ifile, k)))
         results.append(result)
         print(f"The number of positions visited by the tail with a rope of "
               f"{k} knots is {result}")
