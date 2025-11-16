@@ -19,7 +19,7 @@ Yet another go on the good ol' snake - again in Python 3.8.10
 | **[08](https://adventofcode.com/2022/day/8)**  | ⭐ | ⭐ | [day08.py](day08.py) |
 | **[09](https://adventofcode.com/2022/day/9)**  | ⭐ | ⭐ | [day09.py](day09.py) |
 | **[10](https://adventofcode.com/2022/day/10)** | ⭐ | ⭐ | [day10.py](day10.py) |
-| **[11](https://adventofcode.com/2022/day/11)** ||||
+| **[11](https://adventofcode.com/2022/day/11)** | ⭐ | ⭐ | [day11.py](day11.py) |
 | **[12](https://adventofcode.com/2022/day/12)** ||||
 | **[13](https://adventofcode.com/2022/day/13)** ||||
 | **[14](https://adventofcode.com/2022/day/14)** ||||
